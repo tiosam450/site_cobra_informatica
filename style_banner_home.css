@@ -1,0 +1,79 @@
+/* BANNER DESTRUILÇÃO DE DADOS */
+.cta_home_4 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 22vh;
+    margin-left: 30vh;
+}
+
+.cta_home_4 .destaque1{
+    font-size: 2.8em;
+    font-weight: normal;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.cta_home_4 .destaque2{
+    font-size: 2.8em;
+    margin-top: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+.cta_home_4 button {
+    width: 200px;
+    padding: 10px;
+    margin-top: 50px;
+    background: linear-gradient(to right, #021B79, #0575E6);
+    border-radius: 13px;
+    font-size: 1.5em;
+}
+
+.cta_home_4 button:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 2500px) {
+    .cta_home_4 {
+        top: 40vh;   
+    }
+    .cta_home_4 .destaque1{
+        font-size: 4em;
+    }
+    
+    .cta_home_4 .destaque2{
+        font-size: 4em;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    .cta_home_4 {
+        top: 15vh;
+        margin-left: 5vh
+    }
+
+    .cta_home_4 button {
+        margin-top: 20px;
+        width: 180px;
+        padding: 8px;
+        margin-top: 15px;
+        background: linear-gradient(to right, #021B79, #0575E6);
+        border-radius: 13px;
+        font-size: 1.5em;
+    }
+
+    .cta_home_4 .destaque1{
+        font-size: 2.2em;
+    }
+    
+    .cta_home_4 .destaque2{
+        font-size: 2.2em;
+    }
+}
+
+/* BANNER ONU */

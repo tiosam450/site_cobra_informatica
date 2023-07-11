@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Nogueira">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <!-- LINKS -->
+    <link rel="icon" href="img/icone_blog_cobra.svg">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style_cabecalho_blog.css">
+    <link rel="stylesheet" href="/animacoes.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;700&display=swap" rel="stylesheet">
+      
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/7aa73bb9b6.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header class="container_cabecalho">
+       
+        <section class="cabecalho grid_geral">
+            <a href="http://cobrainformatica.com/"><img id="logo_desk" src="/img/logo_cobra.svg" alt="Logo Cobra Informática"></a>
+            <nav class="menu">
+
+                <a class="link" href="/blog.html">Voltar</a>
+            </nav>
+        </section>
+
+    </header>
+
+    <!-- SCROLL SUAVE -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/scroll_suave.js"></script>
+
+    <!-- ANIMAÇÕES -->
+    <script src="/animacoes.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213177705-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-213177705-1');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '366599191623809');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=366599191623809&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</body>
+</html>

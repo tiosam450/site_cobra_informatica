@@ -1,0 +1,61 @@
+.gallery_mob{
+  display:none;
+}
+
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  /* z-index: -90; */
+  top: -20px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.gallery .item {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  background: #4d87e2;
+}
+
+.gallery .item img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (max-width:600px) {
+  .gallery .item img{
+    object-position: -480px 0;
+  }
+  
+}
+
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}

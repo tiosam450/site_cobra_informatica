@@ -1,0 +1,609 @@
+/* FONTES */
+*{
+    font-family: 'KoHo', sans-serif;
+}
+
+span{
+    font-weight: bold;
+}
+
+/* VARIÁVEIS */
+:root{
+    --azul: #002F6E;
+    --azulEscuro: #03224B;
+    --azulClaro: #063066;
+    --azulMaisClaro: #063066;
+    --azulBebe: #E3EBF2;
+    --amarelo: #ffc62b;
+    --cinza: #484B4D;
+    --bg: #F9FCFF
+}
+
+
+/* GRID */
+.grid_geral{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+/* ESTILOS */
+.titulo_azul{
+    color: #03224B;
+    font-family: 'KoHo', sans-serif;
+    font-size: 2em;
+}
+
+.titulo_branco{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.copyright a{
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #58595B;
+}
+.titulo_cinza{
+    font-size: 3em;
+    font-weight: bold;
+    color: #58595B;
+}
+
+.subtitulo_branco{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitulo_cinza{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #58595B;
+}
+
+.texto_branco{
+    font-size: .9em;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.texto_cinza{
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: #58595B;
+}
+
+/* CABEÇALHO */
+.container_cabecalho{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: rgba(3, 34, 75, .9);
+}
+
+.cabecalho{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin: auto;
+    opacity: 1;   
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a{
+    margin: 0 10px;
+}
+
+.menu, .menu ul{
+    display: flex;
+    align-items:center;
+}
+
+.link{
+    font-size: .9em;
+    padding: 13px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    position: relative;
+}
+
+@media (max-width: 400px) {
+    .link{
+        font-size: .7em;
+        /* padding: 20px 10px; */
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 300;
+        /* position: relative; */
+    }
+
+    .menu{
+        /* margin: 0 11px; */
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        text-align: left;
+    }
+    a img{
+        height: 30px;
+    }
+
+    .cabecalho{
+        padding: 5px 30px;
+
+    }
+    
+}
+
+.link:before {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(--amarelo);
+    content: '';
+    transform: translateY(8px);
+    opacity: 0;
+    transition-duration: .3s;
+}
+  
+.menu a:hover:before {
+    transform: translateY(2px);
+    color: var(--amarelo);
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: var(--amarelo);
+}
+
+/* TÍTULO */
+.titulo_container{
+    margin: -500px 0 350px 0px;
+    color: white;
+    padding-left: 30px;
+}
+
+@media (max-width: 1367px) {
+    .titulo_container{
+        margin: -400px 0 350px;
+        transform: scale(.8);
+    }
+}
+
+.titulo h1{
+    max-width: 420px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.titulo p{
+    max-width: 420px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo hr{
+    width: 90px;
+    background: #ffc62b;
+    border: solid 2px var(--amarelo);
+    border-radius: 50px;
+}
+
+.titulo button{
+    color: white;
+    font-weight: lighter;
+    font-size: 2em;
+    text-transform: uppercase;
+    background: var(--amarelo);
+    padding: 5px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.titulo button:hover{
+    color: var(--azulEscuro);
+    background: var(--amarelo);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+@media (max-width: 600px) {
+   
+    .titulo_container{
+        margin: -350px 0 350px 0px;
+        color: white;
+        padding-left: 30px;
+    }
+    
+    .titulo h1{
+        max-width: 250px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    
+    .titulo button{
+        color: white;
+        font-weight: lighter;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        background: var(--amarelo);
+        padding: 5px 30px;
+        margin-left: -10px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: .3s;
+    }
+}
+
+/* NEWSLETTER */
+.newsletter{
+    position: absolute;
+    width: 400px;
+    top: 350px;
+    right: 100px;
+    padding: 30px 20px;
+    background-color: var(--azulBebe);
+    border-radius: 10px;
+}
+
+.newsletter h1{
+    padding: 0 20px;
+    margin-bottom: 10px;
+    width: 360px;
+    font-size: 1.6em;
+    color: var(--azul);
+}
+
+@media (max-width: 1367px) {
+    .newsletter{
+            transform: scale(0.7);
+            top:25%;
+        }
+    
+}
+
+@media (max-width: 875px) {
+    .newsletter{
+       display: none;
+    }
+    
+}
+/* SLIDER */
+.containerSliderBlog{
+    padding: 60px 0;
+    background-color: var(--azulBebe);   
+    margin-top: -106px; 
+}
+
+.containerSliderBlog h1{
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--azul);
+}
+
+.containerSliderBlog .card{
+    height: 400px;
+}
+
+
+@media (max-width: 400px) {
+    .containerSliderBlog{
+        margin-top: -350px; 
+        
+    }
+    .containerSliderBlog img{
+        height: 180px; 
+    }
+    
+}
+
+@media (max-width: 1367px) {
+    .containerSliderBlog{
+        margin-top: -206px; 
+    }
+    .containerSliderBlog .card{
+        height: 420px; 
+    }
+}
+
+
+
+
+/* CARDS */
+.artigos{
+    max-width: 1400px;
+    margin: 60px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.artigos h2{
+    flex: 1 1;
+    padding: 20px;
+}
+
+.link_card{
+    color: var(--azul);
+    letter-spacing: 0;
+    font-weight: 700;
+    padding: 0;
+}
+
+.link_card:hover{
+    color: var(--amarelo);
+}
+
+.container_card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 0 0px;
+}
+
+.card{
+    /* width: 360px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    background: white;
+    border: solid 2px #f0f0f0;
+    border-radius: 13px;
+    padding: 0 0 20px;
+    margin: 0 25px 60px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.card:hover{
+    box-shadow:  0px 5px 10px rgb(200, 200, 200);
+}
+
+.card img{
+    max-width: 100%;
+    min-height: 150px;
+    object-fit: cover;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}
+
+.card h1{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 30px 30px 0 30px;
+    color: var(--azul);
+}
+
+.card p{
+    text-align: left;
+    line-height: 20px;
+    margin: 0 30px 10px;
+    
+}
+
+.link_card{
+    margin: 0 30px;
+    text-align: left;
+}
+
+.card span{
+    font-weight: bold;
+}
+
+.card hr{
+    width: 60px;
+    height: 3px;
+    background: var(--azulEscuro);
+    margin: 20px 0 20px 30px;
+}
+
+/* @media (max-width: 1367px){
+    .container_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    transform: scale(.8);
+    margin-top: -1000px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    transform: scale(1);
+    margin-top: 0;
+    }
+}
+
+@media (max-width: 400px){
+    .container_card{
+    margin-top: -100px;
+    }
+} */
+
+
+/* CENTRAL DE COMPRAS */
+.central_container{
+    background: url('img/banners_rodape_site_cobra.jpg') top center no-repeat;
+    background-size: cover;
+    padding: 60px 0 90px;
+}
+
+.central h1{
+    width: 500px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.central button{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: var(--amarelo);
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.central button:hover{
+    color: var(--azul);
+    background: var(--amarelo);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+@media (max-width: 800px) {
+    .central_container{
+        background: url(img/banners_rodape_mobile_site_cobra.jpg) center no-repeat;
+        background-size: cover;
+        padding: 60px 0 90px;
+    }
+    
+    .central h1{
+        width: 300px;
+        font-size: 1.5em;
+    }
+
+    .central button{
+        color: white;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-left: -10px;
+    }
+}
+
+/* RODAPÉ */
+.container_rodape{
+    background: var(--cinza);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.bloco h2{
+    padding-bottom: 8px;
+}
+
+.bloco p{
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.selo_30_anos{
+    width: 105px;
+    padding: 0 30px;
+}
+
+.logo_duns{
+    width: 80px;
+    padding: 0 30px;
+}
+
+@media (max-width:600px) {
+    .rodape{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .bloco p{
+        padding-bottom: 20px;
+    }
+
+    .selo_30_anos{
+        width: 105px;
+        padding: 30px 20px;
+    }
+
+    .logo_duns{
+        width: 80px;
+        padding: 30px 20px;
+    }
+}
+
+.bloco a{
+    padding: 0 ;
+}
+
+.bloco a p:hover{
+    color: var(--amarelo);
+}
+
+.icones svg{
+    margin-top: 15px;
+    padding: 0px 20px 0 0;
+}
+
+.icones svg {
+    fill: white;
+    stroke: white;
+    stroke-width: 0;
+}
+
+.icones svg:hover {
+    fill: var(--amarelo);
+    stroke: var(--amarelo);
+}
+
+.copyright{
+    text-align: center;
+    background: grey;
+}
+
+.copyright p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width:700px) {
+    body, html{
+        overflow-x:hidden ;
+    }
+}
+

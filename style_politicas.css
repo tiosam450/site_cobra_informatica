@@ -1,0 +1,364 @@
+/* FONTES */
+*{
+    font-family: 'KoHo', sans-serif;
+}
+
+span{
+    font-weight: bold;
+}
+
+/* VARIÁVEIS */
+:root{
+    --azul: #002F6E;
+    --azulEscuro: #03224B;
+    --azulClaro: #063066;
+    --azulMaisClaro: #063066;
+    --azulBebe: #E3EBF2;
+    --amarelo: #ffc62b;
+    --cinza: #484B4D;
+    --bg: #F9FCFF
+}
+
+
+/* GRID */
+.grid_geral{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+/* ESTILOS */
+.titulo_azul{
+    color: #03224B;
+    font-family: 'KoHo', sans-serif;
+    font-size: 2em;
+}
+
+.titulo_branco{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.copyright a{
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #58595B;
+}
+
+.titulo_cinza{
+    font-size: 3em;
+    font-weight: bold;
+    color: #58595B;
+}
+
+.subtitulo_branco{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitulo_cinza{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #58595B;
+}
+
+.texto_branco{
+    font-size: .9em;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.texto_cinza{
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: #58595B;
+}
+
+/* CABEÇALHO */
+.container_cabecalho{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: rgba(3, 34, 75, .9);
+    top: 0;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 0 auto;
+    opacity: 1;   
+}
+
+.menu, .menu ul{
+    display: flex;
+    align-items: end!important; 
+}
+
+.link, a{
+    font-size: .9em;
+    padding: 13px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    position: relative;
+}
+
+@media (max-width: 400px) {
+    .link, a{
+        font-size: .9em;
+        padding: 20px 10px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 300;
+        position: relative;
+    }
+    
+}
+
+.link:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(--amarelo);
+    content: '';
+    transform: translateY(8px);
+    opacity: 0;
+    transition-duration: .3s;
+}
+  
+.menu a:hover:before {
+    transform: translateY(8px);
+    color: var(--amarelo);
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: var(--amarelo);
+}
+
+
+/* MATÉRIA */
+.artigos{
+    max-width: 1400px;
+    margin: 60px auto;
+}
+
+.materia{
+    padding: 60px 20px;
+}
+
+.materia h2{
+    color: var(--azul);
+}
+
+.materia ul{
+    list-style:inside;
+    
+}
+
+.materia p, .materia li{
+    font-size: 1.3em;
+    text-align: left;
+    line-height: 30px;
+    color: var(--cinza);
+    margin-bottom: 30px;
+}
+
+.materia li{
+    line-height: 10px;
+}
+
+.materia a{
+    color: var(--azul);
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.materia span{
+    font-weight: bold;
+}
+
+.materia hr{
+    width: 60px;
+    height: 3px;
+    background: var(--azulEscuro);
+    margin: 20px 0 20px 30px;
+}
+
+
+/* CENTRAL DE COMPRAS */
+.central_container{
+    background: url(img/banners_rodape_site_cobra_3.jpg)center center no-repeat;
+    background-size: cover;
+    padding: 60px 0 90px;
+}
+
+.central h1{
+    width: 500px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.central button{
+    margin: 10px 0 0 -15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background: var(--amarelo);
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.central button:hover{
+    color: var(--azul);
+    background: var(--amarelo);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+@media (max-width: 800px) {
+    .central_container{
+        background: url(img/banners_rodape_mobile_site_cobra.jpg)center center no-repeat;
+        background-size: cover;
+        padding: 60px 0 90px;
+    }
+    
+    .central h1{
+        width: 300px;
+        font-size: 1.5em;
+    }
+
+    .central button{
+        color: white;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-left: -10px;
+    }
+}
+
+/* RODAPÉ */
+.container_rodape{
+    background: var(--cinza);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.bloco h2{
+    padding-bottom: 8px;
+}
+
+.bloco p{
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.selo_30_anos{
+    width: 105px;
+    padding: 0 30px;
+}
+
+.logo_duns{
+    width: 80px;
+    padding: 0 30px;
+}
+
+.selo_gptw{
+    width: 80px;
+    padding: 0 30px;
+}
+
+@media (max-width:600px) {
+    .rodape{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .bloco p{
+        padding-bottom: 20px;
+    }
+
+    .selo_30_anos{
+        width: 105px;
+        padding: 30px 20px;
+    }
+
+    .logo_duns{
+        width: 80px;
+        padding: 30px 20px;
+    }
+}
+
+.bloco a{
+    padding: 0 ;
+}
+
+.bloco a p:hover{
+    color: var(--amarelo);
+}
+
+.icones svg{
+    margin-top: 15px;
+    padding: 0px 20px 0 0;
+}
+
+.icones svg {
+    fill: white;
+    stroke: white;
+    stroke-width: 0;
+}
+
+.icones svg:hover {
+    fill: var(--amarelo);
+    stroke: var(--amarelo);
+}
+
+.copyright{
+    text-align: center;
+    background: grey;
+}
+
+.copyright p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width:700px) {
+    body, html{
+        overflow-x:hidden ;
+    }
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Nogueira">
+
+    <!-- TÍTULO DO SITE -->
+    <title>Blog Cobra Informática</title>
+    <meta name="keywords" content="Cobra Informática, informática, warehouse, compra de equipamentos, destruição de dados">
+    <meta name="robots" content="all">
+    <meta name="description" content="As melhores soluções para o descarte de ativos de informática.">
+    <meta property="og:image" content="http://cobrainformatica.com/img/logo_cobra.png"/>  
+    <meta property="og:title" content="Cobra Informatica"/>  
+    <meta property="og:description" content="As melhores soluções para o descarte de ativos de informática."/>  
+    
+    <!-- LINKS -->
+    <link rel="icon" href="img/icone_blog_cobra.svg">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_materia_blog.css">
+    <link rel="stylesheet" href="animacoes.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;700&display=swap" rel="stylesheet">
+    
+
+    <!-- LINKS BANNER ROTATIVO -->
+    <link rel="stylesheet" href="gallery.theme.css">
+    <link rel="stylesheet" href="gallery.min.css">
+    <link rel="stylesheet" href="gallery.theme.mob.css">
+    <link rel="stylesheet" href="gallery.min.mob.css">
+
+    <!-- LINK SLIDER -->
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/7aa73bb9b6.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/cabecalho_blog.html");
+            $("#footer").load("/rodape_blog.html");
+            $("#share").load("/compartilhar.html");
+        });
+    </script>
+    
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <div id="header"></div>
+
+    <!-- BANNER ROTATIVO DESK -->
+    <section class="gallery autoplay items-1" id="home">
+        <div id="item-1" class="control-operator"></div>
+    
+        <figure class="item">
+        <h1><img src="img/capa_materia_5_blog_site_cobra.jpg" alt=""></h1>
+        </figure>
+    
+    </section>
+
+    <!-- BANNER ROTATIVO MOBILE -->
+    <section class="gallery_mob autoplay items-1" id="home_mob">
+        <div id="item-1" class="control-operator"></div>
+      
+        <figure class="item">
+          <h1><img src="img/capa_materia_mobile_5_blog_site_cobra.jpg" alt=""></h1>
+        </figure>
+      
+    </section>
+
+    <style>
+        .titulo{
+            margin-top: 0px;
+        }
+        .materia{
+            margin-top: 150px;
+        }
+        @media (max-width: 600px) {
+            .titulo h1{
+            margin-top: 0px;
+        }
+        .materia{
+            margin-top: -100px;
+        }
+        }
+    </style>
+
+    <!-- TÍTULO -->
+    <div class="titulo_container">
+        <div class="titulo grid_geral" >
+            <H1 data-anime="top_3">
+                Como as certificações ambientais diferenciam sua empresa (para melhor)!               
+            </H1>
+        </div>  
+    </div>
+
+    <!-- MATERIA -->
+    <section class="artigos" >
+        <div class="materia">
+            <p>Para uma empresa ser sustentável, ela precisa incentivar a conservação do meio ambiente e o bem-estar da sociedade, de uma forma que os ganhos econômicos não causem riscos ao equilíbrio desses dois pilares. Por isso as certificações são de extrema importância, pois mostram que os gestores se preocupam e incentivam as causas ambientais.</p>
+
+            <p>Numa visão mais mercadológica, as certificações ambientais são um investimento com retorno de médio a longo prazo, mas muito bem vistas pelo mercado e principalmente pelos consumidores, que cada vez mais têm buscado produtos e serviços de empresas que estejam engajadas na causa. Responsabilidade social e ambiental impacta diretamente na vida em sociedade e isso é visto como diferencial.</p>
+            
+            <p>Um processo que é sustentável e ainda movimenta a economia é o descarte de ativos tecnológicos. Trata-se da correta destinação de equipamentos eletrônicos como desktops, notebooks e servidores, por exemplo, mas podendo se estender para qualquer produto que esteja relacionado à Tecnologia da Informação.</p>
+
+            <p>O descarte de ativos possibilita que equipamentos considerados obsoletos ou até mesmo esquecidos nas empresas retornem ao mercado, prolongando seu ciclo de vida ou até mesmo garantindo que eles sejam reciclados, tendo suas partes ainda em funcionamento aproveitadas para reuso.</p>
+
+            <p>A prática desse hábito comprova a preocupação da empresa com o meio ambiente e ainda contribui para a geração de empregos no setor de reciclagem. Benefícios que fazem do seu negócio bem visto e ainda contribuem para um planeta com mais qualidade de vida para as futuras gerações.<br><br>
+            <a class="link" href="blog.html">Voltar</a>
+            </p>
+
+            
+        </div>
+        <!-- BOTÕES COMPARTILHAR -->
+        <div id="share"></div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <div id="footer"></div>
+
+<!-- SCROLL SUAVE -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/scroll_suave.js"></script>
+
+<!-- ANIMAÇÕES -->
+<script src="/animacoes.js"></script>
+
+<!-- LINK SLIDER JS -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick/slick.min.js"></script>
+<script src="/slider.js"></script>
+
+</body>
+
+</html>

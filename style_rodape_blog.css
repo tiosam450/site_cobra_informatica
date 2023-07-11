@@ -1,0 +1,231 @@
+/* FONTES */
+*{
+    font-family: 'KoHo', sans-serif;
+}
+
+span{
+    font-weight: bold;
+}
+
+/* VARIÁVEIS */
+:root{
+    --azul: #002F6E;
+    --azulEscuro: #03224B;
+    --azulClaro: #063066;
+    --azulMaisClaro: #063066;
+    --azulBebe: #E3EBF2;
+    --amarelo: #ffc62b;
+    --cinza: #484B4D;
+    --bg: #F9FCFF
+}
+
+
+/* GRID */
+.grid_geral{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+/* ESTILOS */
+.titulo_azul{
+    color: #03224B;
+    font-family: 'KoHo', sans-serif;
+    font-size: 2em;
+}
+
+.titulo_branco{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.copyright a{
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #58595B;
+}
+.titulo_cinza{
+    font-size: 3em;
+    font-weight: bold;
+    color: #58595B;
+}
+
+.subtitulo_branco{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitulo_cinza{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #58595B;
+}
+
+.texto_branco{
+    font-size: .9em;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.texto_cinza{
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: #58595B;
+}
+
+/* CENTRAL DE COMPRAS */
+.central_container{
+    background: url(img/banners_rodape_site_cobra.jpg)top center no-repeat;
+    background-size: cover;
+    padding: 60px 0 90px;
+}
+
+.central h1{
+    width: 500px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.central button{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: var(--amarelo);
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.central button:hover{
+    color: var(--azul);
+    background: var(--amarelo);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+@media (max-width: 800px) {
+    .central_container{
+        background: url(img/banners_rodape_mobile_site_cobra.jpg) center no-repeat;
+        background-size: cover;
+        padding: 60px 0 90px;
+    }
+    
+    .central h1{
+        width: 300px;
+        font-size: 1.5em;
+    }
+
+    .central button{
+        color: white;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-left: -10px;
+    }
+}
+
+/* RODAPÉ */
+.container_rodape{
+    background: var(--cinza);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.bloco h2{
+    padding-bottom: 8px;
+}
+
+.bloco p{
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.selo_30_anos{
+    width: 105px;
+    padding: 0 30px;
+}
+
+.logo_duns{
+    width: 80px;
+    padding: 0 30px;
+}
+
+@media (max-width:600px) {
+    .rodape{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .bloco p{
+        padding-bottom: 20px;
+    }
+
+    .selo_30_anos{
+        width: 105px;
+        padding: 30px 20px;
+    }
+
+    .logo_duns{
+        width: 80px;
+        padding: 30px 20px;
+    }
+}
+
+.bloco a{
+    padding: 0 ;
+}
+
+.bloco a p:hover{
+    color: var(--amarelo);
+}
+
+.icones svg{
+    margin-top: 15px;
+    padding: 0px 20px 0 0;
+}
+
+.icones svg {
+    fill: white;
+    stroke: white;
+    stroke-width: 0;
+}
+
+.icones svg:hover {
+    fill: var(--amarelo);
+    stroke: var(--amarelo);
+}
+
+.copyright{
+    text-align: center;
+    background: grey;
+}
+
+.copyright p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width:700px) {
+    body, html{
+        overflow-x:hidden ;
+    }
+}
+
